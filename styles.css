@@ -1,0 +1,1018 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #161616;
+    padding: 0 7.5%;
+}
+
+/***** Left Sidebar Starts *****/
+#leftSide {
+    width: 7.5%;
+    height: 100vh;
+    background-color: #161616;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    width: 100%;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px; 
+}
+
+.social-media-link {
+    position: relative;
+}
+
+.social-media-link a {
+    color: #898989;
+    font-size: 22px;
+}
+
+.social-media-link-info {
+    position: absolute;
+    top: 0;
+    left: 110%;
+    transform: translateY(-10%);
+    background-color: #161616;
+    padding: 5px 10px; 
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border-radius: 1px;
+    border: 1px solid #5B5B5B;
+    display: none;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 80px;
+    background-color: #5B5B5B;
+}
+/***** Left Sidebar Ends *****/
+
+/***** Right Sidebar Starts *****/
+#rightSide{
+    width: 7.5%;
+    height: 100vh;
+    background-color: #161616;
+    padding: 25px 20px;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.resume-btn{
+    text-decoration: none;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border: 1px solid #5B5B5B;
+    background-color: #161616;
+    padding: 7.5px 15px;
+}
+
+.hire-me-btn{
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 1.5;
+    border: 1px solid #5B5B5B;
+    background-color: #161616;
+    padding: 7.5px 15px;
+}
+
+/***** Right Sidebar Ends *****/
+
+/***** Header Starts *****/
+header{
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    background-color: #161616;
+    text-align: right;
+    padding: 50px 25px;
+    border-bottom: 1px solid #5B5B5B;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #A2A2A2;                  
+}
+/***** Header Ends *****/
+
+/***** Introduction Starts *****/
+#introSection {
+    width: 100%;
+    height: auto;
+    padding: 75px 0;
+    background-color: #161616;
+    border-bottom: 1px solid #5B5B5B;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.intro-left{
+    width: 100%;
+    height: auto;
+}
+
+.intro-left-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.intro-hi{
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;    
+}
+
+.intro-name{
+    font-family: 'LEMON MILK', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #898989;
+    line-height: 1;
+}
+
+.intro-profession{
+    font-family: 'LEMON MILK', sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: #5B5B5B;
+}
+
+.mywork-btn{
+    text-decoration: none;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border: 1px solid #5B5B5B;
+    background-color: #161616;
+    padding: 7.5px 15px;
+}
+
+.intro-right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.intro-bio{
+    font-family: 'Poppins', sans-serif;                                           
+    font-weight: 400;
+    font-size: 1rem;
+    color: #A2A2A2;
+}
+
+.intro-tools p{
+    display: block;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.intro-tools ul{
+    display: block;
+    list-style: none;
+}
+
+.intro-tools li{
+    display: inline-block;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #5B5B5B;
+    margin-right: 15px;
+}
+
+.intro-tech p{
+    display: block;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.intro-tech ul{
+    display: block;
+    list-style: none;
+}
+
+.intro-tech li{
+    display: inline-block;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #5B5B5B;
+    margin-right: 15px;
+}
+
+/***** Introduction Ends *****/
+
+.section-bg {
+    width: 35%;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+}
+
+.section-title{
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.section-number{
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #898989;
+}
+
+/***** About Starts *****/
+#aboutSection {
+    width: 100%;
+    height: auto;
+    padding: 75px 0;
+    background-color: #161616;
+    border-bottom: 1px solid #5B5B5B;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    z-index: 0;
+}
+
+.about-block {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #898989;
+    line-height: 1.5;
+}
+
+.about-text b {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 1.5;
+}
+
+.about-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo img{
+    width: auto;
+    height: 100%;
+}
+/***** About Ends *****/
+
+/***** History Starts *****/
+#historySection {
+    width: 100%;
+    height: auto;
+    padding: 75px 0;
+    background-color: #161616;   
+    border-bottom: 1px solid #5B5B5B;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    z-index: 0;
+}
+
+.history-block {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.history-tabs {
+    width: 100%;
+    height: auto;
+    border-left: 2px solid #5B5B5B;
+    position: relative;
+}
+
+.experience-tab {
+    width: 100%;
+    height: 60px;
+    padding: 7.5px 12.5px;
+    background: transparent;
+    text-align: left;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12.5px;
+}
+
+.active-experience-tab {
+    width: 100%;
+    height: 60px;
+    padding: 7.5px 12.5px;
+    background: linear-gradient(90deg, #a2a2a250 0%, #a2a2a200 50%);
+    text-align: left;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12.5px;
+}
+
+.experience-logo {
+    height: 100%;
+}
+
+.experience-title {
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.experience-title span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+    color: #5B5B5B;
+}
+
+.history-content {
+    width: 100%;
+    height: 100%;
+}
+
+.experience-content {
+    display: none;
+}
+
+.active-experience-content {
+    display: block;
+}
+
+.experience-detail {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #898989;
+    line-height: 1.5;
+}
+
+.experience-btn {
+    text-decoration: none;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border: 1px solid #5B5B5B;
+    background-color: #161616;
+    padding: 7.5px 15px;
+    margin-top: 20px;
+}
+/***** History Ends *****/
+
+/***** Projects Starts *****/
+#projectSection {
+    width: 100%;
+    height: auto;
+    padding: 75px 0;
+    background-color: #161616;
+    border-bottom: 1px solid #5B5B5B;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    z-index: 0;
+}
+
+.project-block {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+/***** Projects Ends *****/
+
+/***** Portfolio Starts *****/
+#portfolioSection {
+    width: 100%;
+    height: auto;
+    padding: 75px 0;
+    background-color: #161616;
+    border-bottom: 1px solid #5B5B5B;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    z-index: 0;
+}
+
+.portfolio-block {
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.portfolio-tabs{
+    width: auto;
+    height: auto;
+    position: relative;
+    float: right;
+    border-bottom: 1px solid #5B5B5B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.portfolio-line {
+    position: absolute;
+    bottom: -1.5px;
+    width: auto;
+    height: 2px;
+    background-color: #898989;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio-tab {
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    background: transparent;
+    text-align: left;
+    border: none;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #5B5B5B;
+}
+
+.active-portfolio-tab {
+}
+
+.portfolio-contents {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.portfolio-project {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.portfolio-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #16161675;
+    z-index: 1;
+}
+
+.portfolio-title{
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.portfolio-tech{
+    list-style: none;
+    position: absolute;
+    top: 17.5%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7.5px;
+}
+
+.portfolio-btn {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border: 1px solid #5B5B5B;
+    background-color: #161616;
+    padding: 7.5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden-project{
+    display: none;
+}
+/***** Portfolio Ends *****/
+
+/***** Contact Starts *****/
+#contactSection {
+    width: 100%;
+    height: auto;
+    padding: 75px 0;
+    background-color: #161616;
+    border-bottom: 1px solid #5B5B5B;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    z-index: 0;
+}
+
+.contact-block {
+    position: relative;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+#contactForm input, textarea, button {
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border: 1px solid #5B5B5B;
+    background-color: #161616;
+    padding: 10px 15px;
+    max-width: 100%;
+}
+
+#contactForm input::placeholder, textarea::placeholder {
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+/*** Email Success Message ***/
+.message-success{
+    display: none;
+}
+
+.success-block{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #161616;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.success-icon{
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #898989;
+}
+
+.success-message{
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #5B5B5B;
+}
+/***** Contact Ends *****/
+
+/***** Footer Starts *****/
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #161616;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-social-media {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; 
+}
+
+footer p {
+    text-decoration: none;
+    font-family: 'Caviar Dreams', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #A2A2A2;                
+}
+/***** Footer Ends *****/
+
+@media only screen and (max-width: 700px) {
+    body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #161616;
+        padding: 0 0;
+    }
+
+    /***** Left Sidebar Starts *****/
+    #leftSide {
+        display: none;
+    }
+    /***** Left Sidebar Ends *****/
+
+    /***** Right Sidebar Starts *****/
+    #rightSide{
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #5B5B5B;
+        padding: 25px 25px;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    /***** Right Sidebar Ends *****/
+
+    /***** Header Starts *****/
+    header{
+        display: none;
+    }
+    /***** Header Ends *****/
+
+    /***** Introduction Starts *****/
+    #introSection {
+        padding: 50px 30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 25px;
+    }
+    /***** Introduction Ends *****/
+
+    .section-bg {
+        width: 75%;
+        top: 50px;
+        left: 30px;
+    }
+
+    /***** About Starts *****/
+    #aboutSection {
+        padding: 50px 30px;
+        gap: 75px;
+    }
+
+    .about-block {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 25px;
+    }
+
+    .about-text {
+        order: 2
+    }
+
+    .about-photo {
+        text-align: center;
+        order: 1;
+    }
+
+    .about-photo img{
+        width: auto;
+        height: 100%;
+    }
+    /***** About Ends *****/
+
+    /***** History Starts *****/
+    #historySection {
+        padding: 50px 30px;
+        gap: 75px;
+    }
+
+    .history-block {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 25px;
+    }
+
+    .history-tabs {
+        border-top: 2px solid #5B5B5B;
+        border-left: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .active-experience-tab {
+        background: linear-gradient(180deg, #a2a2a250 0%, #a2a2a200 100%);
+    }
+
+    .experience-title span {
+        display: none;
+    }
+
+    .experience-content {
+        display: block;
+    }
+    /***** History Ends *****/
+
+    /***** Projects Starts *****/
+    #projectSection {
+        padding: 50px 30px;
+        gap: 50px;
+    }
+    /***** Projects Ends *****/
+
+    /***** Portfolio Starts *****/
+    #portfolioSection {
+        padding: 50px 30px;
+        gap: 50px;
+    }
+
+    .portfolio-contents {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /***** Portfolio Ends *****/
+
+    /***** Contact Starts *****/
+    #contactSection {
+        padding: 50px 30px;
+        gap: 50px;
+    }
+
+    .contact-block {
+        position: relative;
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    /***** Contact Ends *****/
+}
+
+@media only screen and (max-width: 500px) {
+    /***** Left Sidebar Starts *****/
+    #leftSide {
+        display: none;
+    }
+    /***** Left Sidebar Ends *****/
+
+    /***** Right Sidebar Starts *****/
+    #rightSide{
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #5B5B5B;
+        padding: 25px 25px;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    /***** Right Sidebar Ends *****/
+
+    /***** Header Starts *****/
+    header{
+        display: none;
+    }
+    /***** Header Ends *****/
+
+    /***** Introduction Starts *****/
+    #introSection {
+        padding: 50px 30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 25px;
+    }
+
+    .intro-name{
+        font-size: 2rem;
+    }
+    
+    .intro-profession{
+        font-size: 1.50rem;
+    }
+    /***** Introduction Ends *****/
+
+    .section-bg {
+        width: 75%;
+        top: 50px;
+        left: 30px;
+    }
+
+    /***** About Starts *****/
+    #aboutSection {
+        padding: 50px 30px;
+        gap: 75px;
+    }
+
+    .about-block {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 25px;
+    }
+
+    .about-text {
+        order: 2
+    }
+
+    .about-photo {
+        text-align: center;
+        order: 1;
+    }
+
+    .about-photo img{
+        width: auto;
+        height: 100%;
+    }
+    /***** About Ends *****/
+
+    /***** History Starts *****/
+    #historySection {
+        padding: 50px 30px;
+        gap: 75px;
+    }
+
+    .history-block {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 25px;
+    }
+
+    .history-tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .active-experience-tab {
+        background: linear-gradient(180deg, #a2a2a250 0%, #a2a2a200 100%);
+    }
+
+    .experience-title span {
+        display: none;
+    }
+
+    .experience-content {
+        display: block;
+    }
+    /***** History Ends *****/
+
+    /***** Projects Starts *****/
+    #projectSection {
+        padding: 50px 30px;
+        gap: 50px;
+    }
+    /***** Projects Ends *****/
+
+    /***** Portfolio Starts *****/
+    #portfolioSection {
+        padding: 50px 30px;
+        gap: 50px;
+    }
+
+    .portfolio-tabs{
+        width: 100%;
+        gap: 0px;
+    }
+
+    .portfolio-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /***** Portfolio Ends *****/
+
+    /***** Contact Starts *****/
+    #contactSection {
+        padding: 50px 30px;
+        gap: 50px;
+    }
+
+    .contact-block {
+        position: relative;
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    /***** Contact Ends *****/
+}
