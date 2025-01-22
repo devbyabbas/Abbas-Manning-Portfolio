@@ -27,7 +27,7 @@ $(document).ready(function(){
 
     // Download resume button
     $(".resume-btn").click(function(e) {
-        window.open("Abbas Manning - CV.docx", "_blank");
+        window.open("images/Logo.png", "_blank");
     });
 
     // History Section Tabs
@@ -76,7 +76,8 @@ $(document).ready(function(){
 
     //Project Background Images
     const projectBackgroundImages = [
-        "url('images/codepen-logo.png')"
+        "url('images/codepen-logo.png')",
+        "url('images/prrrfume-thumbnail.png')"
     ];
 
     $(".portfolio-project").each(function (index) {
