@@ -27,7 +27,7 @@ $(document).ready(function(){
 
     // Download resume button
     $(".resume-btn").click(function(e) {
-        window.open("images/Logo.png", "_blank");
+        window.open("Abbas Manning - CV.docx", "_blank");
     });
 
     // History Section Tabs
