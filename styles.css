@@ -118,9 +118,6 @@ body {
 header{
     width: 100%;
     height: auto;
-    position: sticky;
-    top: 0;
-    z-index: 0;
     background-color: #161616;
     text-align: right;
     padding: 50px 25px;
