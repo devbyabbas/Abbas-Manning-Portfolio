@@ -77,7 +77,8 @@ $(document).ready(function(){
     //Project Background Images
     const projectBackgroundImages = [
         "url('images/codepen-logo.png')",
-        "url('images/prrrfume-thumbnail.png')"
+        "url('images/prrrfume-thumbnail.png')",
+        "url('images/velocity-thumbnail.png')"
     ];
 
     $(".portfolio-project").each(function (index) {
