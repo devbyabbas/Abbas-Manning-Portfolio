@@ -563,8 +563,19 @@ nav a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #16161675;
+    background-color: #161616;
     z-index: 1;
+}
+
+.portfolio-details {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .portfolio-title{
@@ -584,9 +595,9 @@ nav a {
     left: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    gap: 7.5px;
+    gap: 10px;
 }
 
 .portfolio-btn {
