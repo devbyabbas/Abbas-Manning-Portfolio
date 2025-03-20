@@ -1,5 +1,5 @@
 // Smooth scrolling for nav links
-document.querySelectorAll('a.nav-link').forEach(anchor => {
+document.querySelectorAll('a.nav-link, a.hire-me-btn').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
