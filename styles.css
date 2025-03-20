@@ -583,16 +583,10 @@ nav a {
     font-weight: 600;
     font-size: 1.5rem;
     color: #FFFFFF;
-    position: absolute;
-    top: 5%;
-    left: 5%;
 }
 
 .portfolio-tech{
     list-style: none;
-    position: absolute;
-    top: 17.5%;
-    left: 5%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
